@@ -1,0 +1,30 @@
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.Main-heading {
+    color: blue;
+}
+
+.sliderctrl {
+    /* height: 50px; */
+}
+
+.navctrl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* nav ul li .kuchbhi{
+       
+color: orangered;
+    
+} */
+
+.bgclr{
+    background-color: rgb(231, 231, 231);
+}
+.mtt{
+    margin-top: 15px;
+}

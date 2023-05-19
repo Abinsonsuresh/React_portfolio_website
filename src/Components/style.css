@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+/* ff6600 */
+body{
+    background: black;
+    color:white;
+    padding: 10px 8%;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    overflow: hidden;
+
+    
+}
+nav ul li a{
+    padding-left: 10px;
+    font-size: 23px;
+    font-weight: 450;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+nav ul li a:hover{
+    color:#ff6600;
+
+}
+nav ul li{
+    list-style: none;
+}
+.logo img{
+    width: 120px;
+}
+.logo img:hover{
+transform: scale(1.02);
+}
+
+.btn button{
+    border: 0;
+    outline: 0;
+    background: #ff6600;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+    /* margin-left: 20px; */
+    overflow: hidden;
+}
+/* Height define section */
+#Home,#About,#Services,#Contact{
+    width: 100%;
+    height: 100vh;
+
+}
+/* Main content or Home */
+/* .container{
+    display: flex;
+} */
+.intro{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ padding-top: 20%;
+ overflow: hidden;
+
+}
+.intro h2{
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+/* .name{
+    color: #ff6600;
+} */
+.intro h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.mbtn button{
+    border: 0;
+    outline: 0;
+    background: #ff6600;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+}
+.mbtn .projectbtn{
+
+    margin-left: 10px;
+
+    background: #ff6600;
+    border-radius: 4px;
+}
+.mbtn .projectbtn:hover{
+    background: transparent;
+    border: #ffffff solid 1px;
+
+}
+/* About Section */
+.about-container{
+    display: flex;
+    justify-content: center;
+    border-top: #fff solid 1px;
+}
+.about-container h2{
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.abtcontent{
+    display: flex;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+}
+.abtcontent img{
+width: 350px;
+border-radius: 50%;
+margin-top: 160px;
+border: #fff solid 3px;
+}
+.abtcontent img:hover{
+    transform: scale(1.02);
+    border: #ff6600 solid 3px;
+
+
+}
+.abtcontent p{
+    margin-top: 180px;
+    margin-left: 100px;
+    /* max-width: 650px; */
+    font-size: 17px;
+}
+/* Services Section */
+.services-container{
+    display: flex;
+    justify-content: center;
+    border-top: #fff solid 1px;
+}
+.services-container h2{
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.service-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.service-content .sbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    flex: 1;
+    /* height: 320px; */
+    background-color: rgb(31, 28, 33);
+    padding: 60px 10px;
+    margin-top: 170px;
+    border-radius: 5px;
+    border: #ff6600 solid 3px;
+
+
+}
+.sbox .material{
+padding: 50px 30px;
+}
+.service-content .sbox:hover{
+    border: #fff solid 3px;
+
+}
+
+.material h2{
+    color: #ff6600;
+    margin-bottom: 15px;
+
+}
+.concontainer{
+    display: flex;
+    justify-content: center;
+    border-top: #fff solid 1px;
+
+}
+.concontainer h2{
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.contact-content{
+    position: relative;
+
+}
+
+.contact-content #cont{
+position: absolute;
+left: 50%;
+/* top: 20%; */
+transform: translate(-50%,30%);
+/* padding: 30px 0; */
+  
+    
+}
+
+/* frjkhjvnhjl */
+
+#cont input[type="text"],
+#cont input[type="email"],
+#cont input[type="tel"],
+#cont textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #FFF;
+  margin: 0 0 15px;
+  padding: 20px 0;
+}
+
+
+
+#cont textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+/* #cont button{
+    position: absolute;
+    left: 25%;
+} */
+
+#cont button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #ff6600;
+  color: #FFF;
+  /* margin: 0 0 5px; */
+  padding: 10px;
+  font-size: 15px;
+}
+
+#cont button[type="submit"]:hover {
+  background: #43A047;
+}
