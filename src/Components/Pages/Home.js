@@ -1,54 +1,88 @@
 import React from "react";
 import "../Includes/Home.css";
-import Slider from "../Includes/Slider";
+import img from "../Images/profile.jpg";
+import { Link } from "react-router-dom";
+
+
+// import Slider from "../Includes/Slider";
 import Skills from "./Skills";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Services from "./Services";
 
 export default function Home() {
   return (
     <>
-    <div className="mtt">
-     
-      </div>
+      
       <section className="section ">
         <div className="container">
-          <div className="row">
-            <div className="col-md-12 text-center">
-              <h2 className="Main-heading ">React Web project</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Dignissimos reprehenderit sit cum sapiente quisquam atque
-                repellendus earum iusto ab alias consequuntur ratione sint error
-                unde fugiat neque, explicabo aliquid, architecto cumque
-                temporibus laudantium similique! Sed, natus sint temporibus eos
-                facere consequatur libero laborum enim, sunt quaerat similique.
-                Consequuntur, iusto voluptatibus nostrum non autem aut, sit iste
-                repudiandae at placeat quibusdam voluptate ipsam earum modi
-                dignissimos alias a odit nemo asperiores tempora dolorum
-                mollitia aperiam? Voluptas doloremque nulla, nobis eos ullam
-                autem repellat quaerat, deserunt nam distinctio dolorum fugiat
-                officia magnam quo velit? Ea aut vel eum nemo voluptates beatae
-                quasi!
-              </p>
-              <Link to="/About" className="btn btn-warning shadow">
+          {/* <div className="img">
+              <img
+                    className="gifsize"
+                    src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif"
+                    alt="css"/>
+              </div> */}
+
+          <div className="">
+            <div className="col-11 adj">
+              <h2 className="">Hi! I Am</h2>
+              <h2 className="">
+                Abinson Suresh
+                <span>
+                  <img
+                    className="gifsize"
+                    src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif"
+                    alt="css"
+                  />
+                </span>
+              </h2>
+              <h3>Front-End Web Developer|Graphic Designer|UI UX Designer</h3>
+
+              {/* <Link to="/About" className="btn btn-warning shadow">
                 Read more
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="sliderctrl">
+      {/* <section className="sliderctrl">
         <div className="container ">
           <Slider />
         </div>
+      </section> */}
+  <section className="About">
+  <h2 className="Main-heading text-center border-top">About</h2>
+  <div className="container ">
+  <div className="col-md-9  abbt text-center">
+          <img className="profileimg" src={img} alt="" />
+          <p>
+            React.js front-end web developer with a passion for crafting
+            exceptional user experiences. Experienced in building robust and
+            scalable web applications that blend aesthetics with functionality.
+            <br />
+            Key skills: React.js, JavaScript, HTML5, CSS3, Git, UI/UX design
+            principles, Responsive web design, Python
+          </p>
+          <Link to="/About" className="btn btn-warning shadow">
+                Know more
+              </Link>
+        </div>
+        </div>
+  </section>
+      <section className="bgclr">
+        <h2 className="Main-heading text-center border-top">Skills</h2>
+
+        <Skills />
+      </section>
+      <section>
+        <h2 className="Main-heading text-center border-top ">Services</h2>
+        <Services />
       </section>
 
-      
-      <Skills/>
-      <Services/>
+      <section>
+
+      </section>
     </>
   );
 }

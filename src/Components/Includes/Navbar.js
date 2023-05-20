@@ -10,7 +10,7 @@ let a = 20;
 export default function Navbar() {
   return (
     <>
-      <div className="navbar bg-dark" data-bs-theme="dark">
+      <div className="navbar bg-dark" data-bs-theme="dark"> 
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -34,7 +34,7 @@ export default function Navbar() {
                     className="collapse navbar-collapse"
                     id="navbarSupportedContent"
                   >
-                    <ul className="navbar-nav">
+                    <ul className="navbar-nav ">
                     <li className="nav-item">
                         <Link to="/Home" className="nav-link active">
                           <img src={logo} alt="" height={a}/>
@@ -42,7 +42,7 @@ export default function Navbar() {
                       </li>
                     </ul>
                     {/* me-auto mb-2 mb-lg-0 */}
-                    <ul className="navbar-nav mx-auto">
+                    <ul className="navbar-nav mx-auto ">
                       <li className="nav-item ">
                         <Link to="/Home" className="nav-link active text-white">
                           Home

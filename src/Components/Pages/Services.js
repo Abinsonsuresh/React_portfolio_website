@@ -6,11 +6,11 @@ import img3 from '../Images/img3.jpg'
 export default function Services() {
   return (
     <>
-      <section className="section border-top bgclr">
+      <section className="">
         <div className="container">
           <div className="row">
             <div className="col-md-12 mb-4 text-center">
-              <h2 className="Main-heading ">Services</h2>
+              {/* <h2 className="Main-heading ">Services</h2> */}
             </div>
             <div className="col-md-4 text-center g-5">
               <div className="card">
