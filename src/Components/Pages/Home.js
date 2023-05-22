@@ -9,6 +9,7 @@ import Skills from "./Skills";
 
 // import { Link } from "react-router-dom";
 import Services from "./Services";
+// import Slider from "../Includes/Slider";
 
 export default function Home() {
   return (
@@ -52,11 +53,17 @@ export default function Home() {
         </div>
       </section> */}
   <section className="About">
-  <h2 className="Main-heading text-center border-top">About</h2>
-  <div className="container ">
-  <div className="col-md-9  abbt text-center">
-          <img className="profileimg" src={img} alt="" />
-          <p>
+  <div className="container my-4">
+
+
+            <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-12">
+            <h2 className="text-center pb-5 border-top">About</h2>
+
+            <div class="col-md-8 d-flex justify-content-center align-items">
+            <img className="profileimg img-fluid" src={img} alt="" />      
+            </div>
+            <p className="lead">
             React.js front-end web developer with a passion for crafting
             exceptional user experiences. Experienced in building robust and
             scalable web applications that blend aesthetics with functionality.
@@ -64,17 +71,20 @@ export default function Home() {
             Key skills: React.js, JavaScript, HTML5, CSS3, Git, UI/UX design
             principles, Responsive web design, Python
           </p>
-          <Link to="/About" className="btn btn-warning shadow">
-                Know more
+            </div>
+        </div>
+      <Link to="/About" className="btn btn-warning shadow">
+                Read more
               </Link>
-        </div>
-        </div>
+      </div>
+            
   </section>
       <section className="bgclr">
         <h2 className="Main-heading text-center border-top">Skills</h2>
 
         <Skills />
       </section>
+
       <section>
         <h2 className="Main-heading text-center border-top ">Services</h2>
         <Services />
